@@ -73,7 +73,7 @@ export const createOrderCtrl = asyncHandler(async (req, res) => {
   const convertedOrders = orderItems.map((item) => {
     return {
       price_data: {
-        currency: "usd",
+        currency: "myr",
         product_data: {
           name: item?.name,
           description: item?.description,
