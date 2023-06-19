@@ -19,6 +19,6 @@ categoriesRouter.post(
 );
 categoriesRouter.get("/", getAllCategoriesCtrl);
 categoriesRouter.get("/:id", getSingleCategoryCtrl);
-categoriesRouter.delete("/:id", deleteCategoryCtrl);
+categoriesRouter.delete("categories/:id", deleteCategoryCtrl);
 categoriesRouter.put("/:id", updateCategoryCtrl);
 export default categoriesRouter;
