@@ -16,6 +16,6 @@ brandsRouter.post("/", isLoggedIn, isAdmin, createBrandCtrl);
 brandsRouter.get("/", getAllBrandsCtrl);
 brandsRouter.get("/:id", getSingleBrandCtrl);
 brandsRouter.delete("/:id", isLoggedIn, isAdmin, deleteBrandCtrl);
-brandsRouter.put("/:id", isLoggedIn, isAdmin, updateBrandCtrl);
+brandsRouter.put("brands/:id", isLoggedIn, isAdmin, updateBrandCtrl);
 
 export default brandsRouter;
