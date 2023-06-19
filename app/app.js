@@ -27,7 +27,7 @@ const stripe = new Stripe(process.env.STRIPE_KEY);
 
 // This is your Stripe CLI webhook secret for testing your endpoint locally.
 const endpointSecret =
-  "whsec_S7fIjWHpckv74niH1amljQzuKL7iMNOD";
+  "we_1NAoNgAhg4v7HjFwQQfr3ymq";
 
 app.post(
   "/webhook",
