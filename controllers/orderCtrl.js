@@ -90,7 +90,7 @@ export const createOrderCtrl = asyncHandler(async (req, res) => {
     },
     mode: "payment",
     success_url: "https://main--awesomestore-ecommerce.netlify.app/success",
-    cancel_url: "https://main--awesomestore-ecommerce.netlify.app/cancel",
+    cancel_url: "https://main--awesomestore-ecommerce.netlify.app/order-payment",
   });
   res.send({ url: session.url });
 });
