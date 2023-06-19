@@ -14,7 +14,7 @@ const couponsRouter = exppress.Router();
 couponsRouter.post("/", isLoggedIn, createCouponCtrl);
 
 couponsRouter.get("/", getAllCouponsCtrl);
-couponsRouter.put("/:id", isLoggedIn, isAdmin, updateCouponCtrl);
+couponsRouter.put("coupons/:id", isLoggedIn, isAdmin, updateCouponCtrl);
 couponsRouter.delete("/delete/:id", isLoggedIn, isAdmin, deleteCouponCtrl);
 couponsRouter.get("/single", getCouponCtrl);
 export default couponsRouter;
