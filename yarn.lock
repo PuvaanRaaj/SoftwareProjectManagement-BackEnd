@@ -322,7 +322,7 @@
     "@aws-sdk/types" "3.226.0"
     "tslib" "^2.3.1"
 
-"@aws-sdk/credential-providers@^3.186.0":
+"@aws-sdk/credential-providers@^3.186.0", "@aws-sdk/credential-providers@^3.201.0":
   "integrity" "sha512-wqj88z9UCbqxnd9XoaKrI+7oSN/13f1AP7cZWYKrzdvb3Ae5QmXmgMKXJdsQlWtPijchpPOQNGhd1rVogycgiA=="
   "resolved" "https://registry.npmjs.org/@aws-sdk/credential-providers/-/credential-providers-3.238.0.tgz"
   "version" "3.238.0"
@@ -881,6 +881,11 @@
   "version" "4.7.0"
   dependencies:
     "buffer" "^5.6.0"
+
+"bson@^5.3.0":
+  "integrity" "sha512-ukmCZMneMlaC5ebPHXIkP8YJzNl5DC41N5MAIvKDqLggdao342t4McltoJBQfQya/nHBWAcSsYRqlXPoQkTJag=="
+  "resolved" "https://registry.npmjs.org/bson/-/bson-5.3.0.tgz"
+  "version" "5.3.0"
 
 "buffer-equal-constant-time@1.0.1":
   "integrity" "sha512-zRpUiDwd/xk6ADqPMATG8vc9VPrkck7T07OIx0gnjmJAnHnTVXNQG3vfvWNuiZIkwu9KrKdA1iJKfsfTVxE6NA=="
@@ -1511,13 +1516,24 @@
   dependencies:
     "minimist" "^1.2.6"
 
-"mongodb-connection-string-url@^2.5.4":
+"mongodb-connection-string-url@^2.5.4", "mongodb-connection-string-url@^2.6.0":
   "integrity" "sha512-WvTZlI9ab0QYtTYnuMLgobULWhokRjtC7db9LtcVfJ+Hsnyr5eo6ZtNAt3Ly24XZScGMelOcGtm7lSn0332tPQ=="
   "resolved" "https://registry.npmjs.org/mongodb-connection-string-url/-/mongodb-connection-string-url-2.6.0.tgz"
   "version" "2.6.0"
   dependencies:
     "@types/whatwg-url" "^8.2.1"
     "whatwg-url" "^11.0.0"
+
+"mongodb@^5.6.0":
+  "integrity" "sha512-z8qVs9NfobHJm6uzK56XBZF8XwM9H294iRnB7wNjF0SnY93si5HPziIJn+qqvUR5QOff/4L0gCD6SShdR/GtVQ=="
+  "resolved" "https://registry.npmjs.org/mongodb/-/mongodb-5.6.0.tgz"
+  "version" "5.6.0"
+  dependencies:
+    "bson" "^5.3.0"
+    "mongodb-connection-string-url" "^2.6.0"
+    "socks" "^2.7.1"
+  optionalDependencies:
+    "saslprep" "^1.0.3"
 
 "mongodb@4.12.1":
   "integrity" "sha512-koT87tecZmxPKtxRQD8hCKfn+ockEL2xBiUvx3isQGI6mFmagWt4f4AyCE9J4sKepnLhMacoCTQQA6SLAI2L6w=="
