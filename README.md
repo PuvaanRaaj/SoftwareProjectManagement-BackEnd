@@ -1,60 +1,94 @@
-# Software Project Management - Final Project Backend
+\# Software Project Management - Final Project Backend
 
-This project is a backend application built using Node.js and Express.js for my final project in the Software Project Management subject. It provides an API for the frontend React application.
+This is the backend application for the final project in the Software Project Management subject. It has been built using Node.js and Express.js and provides an API for the frontend React application.
 
-This backend API is currently hosted on [Render](https://www.render.com/).
+The backend API is currently hosted on [Render](https://www.render.com/).
 
-## Installation and Local Development
+\## Installation and Local Development
 
-First, clone the repository:
+Follow the steps below to install and run the application in your local environment.
 
-\`\`\`
-git clone https://github.com/PuvaanRaaj/testing.git
-\`\`\`
+\### Step 1: Clone the repository
 
-Next, navigate into the project directory:
+\```bash
+git clone https://github.com/PuvaanRaaj/SoftwareProjectManagement-BackEnd.git
+\```
 
-\`\`\`
-cd your-backend-project-name
-\`\`\`
+\### Step 2: Navigate into the project directory
 
-Then, install the necessary dependencies:
+\```bash
+cd SoftwareProjectManagement-BackEnd
+\```
 
-\`\`\`
+\### Step 3: Install the necessary dependencies
+
+\```bash
 npm install
-\`\`\`
+\```
 
-Once the installation is complete, you can run the application in development mode with:
+\### Step 4: Duplicate the .env example to .env
 
-\`\`\`
-npm start
-\`\`\`
+Create a new file in the project root directory named `.env`. Copy the contents of the `.env.example` file into the `.env` file.
 
-The application will run locally and can be accessed for testing using Postman or similar tools.
+\### Step 5: Create a MongoDB Database
 
-## Available Scripts
+Create a new MongoDB database for this project. If you are unfamiliar with this process, [watch this video tutorial](https://youtu.be/KD1vGsymHuA).
+
+\### Step 6: Create an account at Stripe
+
+Create an account at [Stripe](https://stripe.com/).
+
+\### Step 7: Fill up the data in the .env file
+
+Ensure to fill up the necessary data in the `.env` file, such as the MongoDB URI, Stripe account details.
+
+\### Step 8: Update the Stripe public key in app.js
+
+Find the place in `app.js` where the Stripe public key is defined and replace it with your Stripe public key.
+
+\### Step 9: Start the Application
+
+You can start the application with either of the following commands:
+
+\```bash
+npm run start
+\```
+
+or
+
+\```bash
+nodemon app.js
+\```
+
+After starting the application, take the localhost link and paste it into the frontend application to connect both.
+
+\### Step 10: Full Backend Setup
+
+For a detailed guide on setting up the entire backend, you can watch [this video tutorial](https://youtu.be/vqWm6nyc2YE).
+
+\## Available Scripts
 
 In addition to `npm start`, the following scripts are available:
 
-### `npm test`
+\### `npm test`
 
-Launches the test runner in interactive watch mode.
+This launches the test runner in interactive watch mode.
 
-### `npm run build`
+\### `npm run build`
 
-Builds the app for production.
+This builds the app for production.
 
-### `npm run eject`
+\### `npm run eject`
 
-Removes the single build dependency from your project.
+This removes the single build dependency from your project.
 
-## API Endpoints
+\## API Endpoints
 
-Add a section here detailing your API endpoints, request/response formats, and any other information necessary for using the API.
+Please add a section here detailing your API endpoints, request/response formats, and any other information necessary for using the API.
 
-## License
+\## License
 
-\`\`\`
+\```bash
 MIT License
 
 Copyright (c) 2023 Puvaan Raaj
@@ -76,6 +110,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-\`\`\`
-
-Please replace "Your Name" and "your-github-username/your-backend-project-name" with your actual name and your actual project details respectively.
+\```
