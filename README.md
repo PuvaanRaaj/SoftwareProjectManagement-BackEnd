@@ -84,7 +84,7 @@ This removes the single build dependency from your project.
 
 ## API Endpoints
 
-Please add a section here detailing your API endpoints, request/response formats, and any other information necessary for using the API.
+Api's are testing in POSTMAN
 
 ## License
 
